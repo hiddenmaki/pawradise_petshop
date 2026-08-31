@@ -1,0 +1,225 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.videobg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.videobg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.signin-box{
+    background: linear-gradient(120deg,rgb(247, 58, 228),rgb(16, 231, 152));
+    padding: 35px 30px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 23px rgb(0, 0, 0);
+    z-index: 1;
+    opacity: 0.9;
+    overflow: hidden;
+}
+
+.logoimg{
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    animation: logospin 3s infinite;
+}
+
+@keyframes logospin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.logologin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 23px;
+    transition: transform 0.2s ease-in;
+}
+
+h2:hover{
+    transform: translateY(-6px) scale(1.16);
+    cursor: default;
+}
+
+.btnlogingg{
+    background: #fbf8f8;
+    display: flex; 
+    align-items: center; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: none; 
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.btnlogingg:hover{
+    box-shadow: none !important;
+}
+
+.logogoogle{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.horizonline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.horizonline::before,
+.horizonline::after {
+  content: "";
+  flex-grow: 1;
+  border-top: 1px solid #665c5c;
+}
+
+.horizonline span{
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size: 14px;
+    color: #524c4c;
+}
+
+.horizonline span{
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+}
+
+form label{
+    font-size: 17px;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-bottom: 1px;
+}
+
+form label:hover{
+    transform: translateY(-4px) scale(1.16);
+}
+
+form input{
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 3.2px;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in;
+}
+
+form input:hover{
+    transform: translateY(5.2px) scale(1.05);
+}   
+
+form button{
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, rgb(246, 29, 29), rgb(78, 60, 240));
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 3);
+    cursor: pointer;
+}
+
+form buttom::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4)) 10%, transparent 10.01%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: scale(0);
+    transition: transform 0.6s ease-out;
+
+}
+
+form buttom:hover:before{
+    transform: scale(2.5);
+    transition: transform 0.6s ease-out;
+}
+
+form button:hover{
+    transform: translateY(6px);
+    box-shadow: 0 12px 25px rgb(250, 6, 55);
+}
+
+.btnsignin{
+    display: flex;
+    justify-content: center;
+}
+
+.backhome{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.backhome:hover{
+    transform: translate(-8px) scale(1.2);
+}
+
+.ingoup{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    transition: transform 0.4s ease;
+}
+.ingoup:hover{
+    transform: translateY(-6px) scale(1.05);
+    cursor: default;
+}
